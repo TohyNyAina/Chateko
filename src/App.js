@@ -9,7 +9,12 @@ function App() {
   return (
     <div className="app__wrapper">
         <Chat>
-          
+            <ChanellListContainer
+
+            />
+            <ChanelContainer
+
+            />
         </Chat>
     </div>
   );
