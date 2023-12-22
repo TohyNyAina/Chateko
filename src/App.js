@@ -5,10 +5,12 @@ import Cookies from 'universal-cookie';
 
 const apiKey = '3nwtewpc5gza';
 
+const client = StreamChat.getInstance(apiKey);
+
 function App() {
   return (
     <div className="app__wrapper">
-        <Chat>
+        <Chat client={client} theme="team light">
             <ChanellListContainer
 
             />
