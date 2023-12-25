@@ -44,6 +44,8 @@ const Auth = () => {
             cookies.set('avatarURL', avatarURL);
             cookies.set('hashedPassword', hashedPassword);
         }
+
+        window.location.reload();
     }
 
     const switchMode = () => {
