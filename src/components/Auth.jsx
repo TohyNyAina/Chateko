@@ -61,11 +61,11 @@ const Auth = () => {
         <div className='auth__form-container'>
             <div className='auth__form-container_fields'>
                 <div className='auth__form-container_fields-content'>
-                    <p>{isSignup ? 'Sign Up' : 'Sign In'}</p>
+                    <p>{isSignup ? 'Hisoratra anarana' : 'Hiditra'}</p>
                     <form onSubmit={handleSubmit}>
                         {isSignup && (
                             <div className='auth__form-container_fields-content_input'>
-                                <label htmlFor="fullName">Full Name</label>
+                                <label htmlFor="fullName">Anarana Feno</label>
                                 <input
                                     name="fullName"
                                     type="text"
@@ -76,7 +76,7 @@ const Auth = () => {
                             </div>
                         )}
                         <div className='auth__form-container_fields-content_input'>
-                            <label htmlFor="username">Username</label>
+                            <label htmlFor="username">Anaran'ny mpampiasa</label>
                             <input
                                 name="username"
                                 type="text"
@@ -87,7 +87,7 @@ const Auth = () => {
                         </div>
                         {isSignup && (
                             <div className='auth__form-container_fields-content_input'>
-                                <label htmlFor="phoneNumber">Phone Number</label>
+                                <label htmlFor="phoneNumber">Laharan' ny finday</label>
                                 <input
                                     name="phoneNumber"
                                     type="number"
@@ -99,7 +99,7 @@ const Auth = () => {
                         )}
                         {isSignup && (
                             <div className='auth__form-container_fields-content_input'>
-                                <label htmlFor="avatarURL">Avatar URL</label>
+                                <label htmlFor="avatarURL">Rohy ahitana ny sarinao</label>
                                 <input
                                     name="avatarURL"
                                     type="text"
@@ -110,7 +110,7 @@ const Auth = () => {
                             </div>
                         )}
                         <div className='auth__form-container_fields-content_input'>
-                            <label htmlFor="password">Password</label>
+                            <label htmlFor="password">Teny fanalahidy</label>
                             <input
                                 name="password"
                                 type="password"
@@ -121,7 +121,7 @@ const Auth = () => {
                         </div>
                         {isSignup && (
                             <div className='auth__form-container_fields-content_input'>
-                                <label htmlFor="confirmPassword">Confirm Password</label>
+                                <label htmlFor="confirmPassword">Hamarino ny teny fanalahidy</label>
                                 <input
                                     name="confirmPassword"
                                     type="password"
@@ -132,17 +132,17 @@ const Auth = () => {
                             </div>
                         )}
                         <div className='auth__form-container_fields-content_button'>
-                            <button>{isSignup ? 'Sign Up' : 'Sign In'}</button>
+                            <button>{isSignup ? 'Hisoratra anarana' : 'Hiditra'}</button>
                         </div>
                     </form>
                     <div className='auth__form-container_fields-account'>
                         <p>
                             {isSignup
-                                ? "Already have an account?"
-                                : "Don't have an account?"
+                                ? "Efa manana kaonty?"
+                                : "Tsy mbola manana kaonty?"
                             }
                             <span onClick={switchMode}>
-                                {isSignup ? 'Sign In' : 'Sign Up'}
+                                {isSignup ? 'Hiditra' : 'Hisoratra anarana'}
                             </span>
                         </p>
                     </div>

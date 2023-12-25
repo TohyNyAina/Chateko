@@ -7,7 +7,7 @@ const TeamChannelList = ({ children, error = false, loading, type }) => {
         return type == 'team' ? (
             <div className='team-channel-list'>
                 <p className='team-channel-list__message'>
-                    Connection error, please wait a moment and try again.
+                    Misy tsy fahatomombanana ny tambazotra, miandrasa kely azavady na miverena afaka kelikely eo.
                 </p>
             </div>
         ) : null
@@ -17,7 +17,7 @@ const TeamChannelList = ({ children, error = false, loading, type }) => {
         return (
             <div className='team-channel-list'>
                 <p className='team-channel-list__message loading'>
-                    {type === 'team' ? 'channels' : 'Messages'} loading ...
+                    {type === 'team' ? 'channels' : 'Messages'} Miandry fa gasy ...
                 </p>
             </div> 
         )
