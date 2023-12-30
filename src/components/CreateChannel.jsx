@@ -13,17 +13,20 @@ const ChannelNameInput = ({ channelName = '', setChannelName }) => {
     return (
         <div className='channel-name-input__wrapper'>
             <p>Anarana</p>
-            <input value={channelName} onChange={handleChange} placeholder="anaran'ny fikambanana" />
+            <input value={channelName} onChange={handleChange} placeholder="anaran'ny vondrona" />
             <p>Hampiditra mpikambana</p>
         </div>
     );
 }
 
 
-const CreateChannel = () => {
+const CreateChannel = ({ createType, setIsCreating }) => {
     return (
-        <div>
-            <ChannelNameInput />
+        <div className='create-channel__container'>
+            <div className='create-channel__header'>
+                <p>{createType === 'team' ? 'Hamorona vondrona vaovao' : 'Handefa hafatra avy hatrany'}</p>
+                <CloseCreateChannel setIsEditing={setIsCreating} />
+            </div>
         </div>
     );
 }
