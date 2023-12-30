@@ -38,13 +38,13 @@ function App() {
         <Chat client={client} theme="team light">
             <ChannelListContainer
                 isCreating={isCreating}
-                setIscreating={setIsCreating}
+                setIsCreating={setIsCreating}
                 setCreateType={setCreateType}
                 setIsEditing={setIsEditing}
             />
             <ChannelContainer
                 isCreating={isCreating}
-                setIscreating={setIsCreating}
+                setIsCreating={setIsCreating}
                 isEditing={isEditing}
                 setIsEditing={setIsEditing}
                 createType={createType}
