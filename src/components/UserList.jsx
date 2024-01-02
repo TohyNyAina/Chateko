@@ -23,6 +23,7 @@ const UserItem = ({ user }) => {
                 <p className='user-item__name'>{user.fullName || user.id}</p>
             </div>
             <InviteIcon />
+            <div></div>
         </div>
     )
 }
