@@ -13,9 +13,9 @@ const ChannelNameInput = ({ channelName = '', setChannelName }) => {
 
     return (
         <div className="channel-name-input__wrapper">
-            <p>Name</p>
+            <p>Anaran'ny fantsona</p>
             <input value={channelName} onChange={handleChange} placeholder="channel-name" />
-            <p>Add Members</p>
+            <p>Hampiditra mpikambana</p>
         </div>
     )
 }
@@ -47,13 +47,13 @@ const CreateChannel = ({ createType, setIsCreating }) => {
     return (
         <div className="create-channel__container">
             <div className="create-channel__header">
-                <p>{createType === 'team' ? 'Create a New Channel' : 'Send a Direct Message'}</p>
+                <p>{createType === 'team' ? 'Hamorona fantsona vaovao' : 'Handefa hafatra avy hatrany'}</p>
                 <CloseCreateChannel setIsCreating={setIsCreating} />
             </div>
             {createType === 'team' && <ChannelNameInput channelName={channelName} setChannelName={setChannelName}/>}
             <UserList setSelectedUsers={setSelectedUsers} />
             <div className="create-channel__button-wrapper" onClick={createChannel}>
-                <p>{createType === 'team' ? 'Create Channel' : 'Create Message Group'}</p>
+                <p>{createType === 'team' ? 'Hamorona fantsona' : 'Hamorona vondrona fandefasana hafatra'}</p>
             </div>
         </div>
     )

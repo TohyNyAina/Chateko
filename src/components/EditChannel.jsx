@@ -13,9 +13,9 @@ const ChannelNameInput = ({ channelName = '', setChannelName }) => {
 
     return (
         <div className="channel-name-input__wrapper">
-            <p>Name</p>
+            <p>Anaran'ny fantsona</p>
             <input value={channelName} onChange={handleChange} placeholder="channel-name" />
-            <p>Add Members</p>
+            <p>Hampiditra mpikambana</p>
         </div>
     )
 }

@@ -22,8 +22,8 @@ const ChannelContainer = ({ isCreating, setIsCreating, isEditing, setIsEditing, 
 
     const EmptyState = () => (
         <div className="channel-empty__container">
-            <p className="channel-empty__first">This is the beginning of your chat history.</p>
-            <p className="channel-empty__second">Send messages, attachments, links, emojis, and more!</p>
+            <p className="channel-empty__first">Ity no fiandohan'ny tantaran'ny chat anao.</p>
+            <p className="channel-empty__second">Mandefasa hafatra, rohy, sary kely maneho fihetseham-po, ary maro hafa!</p>
         </div>
     )
 

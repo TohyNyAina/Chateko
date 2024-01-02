@@ -7,7 +7,7 @@ const TeamChannelList = ({ setToggleContainer, children, error = false, loading,
         return type === 'team' ? (
             <div className="team-channel-list">
                 <p className="team-channel-list__message">
-                    Connection error, please wait a moment and try again.
+                Misy tsy fahatomombanana ny tambazotra, miandrasa kely azavady na miverena afaka kelikely eo.
                 </p>
             </div>
         ) : null
@@ -17,7 +17,7 @@ const TeamChannelList = ({ setToggleContainer, children, error = false, loading,
         return (
             <div className="team-channel-list">
                 <p className="team-channel-list__message loading">
-                    {type === 'team' ? 'Channels' : 'Messages'} loading...
+                    {type === 'team' ? 'Fantsona' : 'Hafatra'} Miandry fa gasy ...
                 </p>
             </div>
         )
@@ -27,7 +27,7 @@ const TeamChannelList = ({ setToggleContainer, children, error = false, loading,
         <div className="team-channel-list">
             <div className="team-channel-list__header">
                 <p className="team-channel-list__header__title">
-                    {type === 'team' ? 'Channels' : 'Direct Messages'}
+                    {type === 'team' ? 'Fantsona' : 'Hafatra'}
                 </p>
                 <AddChannel 
                     isCreating={isCreating}
