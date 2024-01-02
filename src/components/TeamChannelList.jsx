@@ -4,7 +4,7 @@ import { AddChannel } from '../assets';
 
 const TeamChannelList = ({ children, error = false, loading, type, isCreating, setIsCreating, setCreateType, setIsEditing }) => {
     if(error) {
-        return type == 'team' ? (
+        return type === 'team' ? (
             <div className='team-channel-list'>
                 <p className='team-channel-list__message'>
                     Misy tsy fahatomombanana ny tambazotra, miandrasa kely azavady na miverena afaka kelikely eo.
