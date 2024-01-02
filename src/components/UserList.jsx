@@ -25,8 +25,25 @@ const UserItem = () => {
     )
 }
 
+
 const UserList = () => {
-    const [users, setUsers] 
+    const [users, setUsers]  = useState([]);
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        const getUsers= async () => {
+            if(loading) return;
+
+            setLoading(true);
+
+            try {
+
+            } catch (error) {
+                
+            }
+
+        }
+    }, [filters])
 
     return (
         <ListContainer>
