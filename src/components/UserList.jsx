@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Avatar, useChatChannet } from 'stream-chat-react'; 
+import { Avatar, useChatContext } from 'stream-chat-react'; 
 
 import { InviteIcon } from '../assets';
 
@@ -27,8 +27,10 @@ const UserItem = () => {
 
 
 const UserList = () => {
+    const { client } = useChatContext();
     const [users, setUsers]  = useState([]);
     const [loading, setLoading] = useState(false);
+    const [listEmpty, setListEmpty] = useState(false);
 
     useEffect(() => {
         const getUsers= async () => {
@@ -37,13 +39,25 @@ const UserList = () => {
             setLoading(true);
 
             try {
+                const response = await client.queryUsers(
+                    { id: {$ne: client.userID} },
+                    { id: 1 },
+                    { limit: 8 }
+                );
 
+                if(response.users.length) {
+                    setUsers(response.users);
+                } else {
+
+                }
             } catch (error) {
-                
+                console.log(error);
             }
-
+            setLoading(false);
         }
-    }, [filters])
+
+        if(client) getUsers()
+    }, [])
 
     return (
         <ListContainer>
