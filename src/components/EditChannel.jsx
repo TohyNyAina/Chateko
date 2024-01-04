@@ -31,7 +31,7 @@ const EditChannel = ({ setIsEditing }) => {
         const nameChanged = channelName !== (channel.data.name || channel.data.id);
 
         if(nameChanged) {
-            await channel.update({ name: channelName }, { text: `Channel name changed to ${channelName}`});
+            await channel.update({ name: channelName }, { text: `Anaran'ny fantsona niova ho ${channelName}`});
         }
 
         if(selectedUsers.length) {
@@ -52,7 +52,7 @@ const EditChannel = ({ setIsEditing }) => {
             <ChannelNameInput channelName={channelName} setChannelName={setChannelName} />
             <UserList setSelectedUsers={setSelectedUsers} />
             <div className="edit-channel__button-wrapper" onClick={updateChannel}>
-                <p>Save Changes</p>
+                <p>Raiketina ny fanovana</p>
             </div>
         </div>
     )
