@@ -97,7 +97,7 @@ const Auth = () => {
                                 />
                             </div>
                         )}
-                        {isSignup && (
+                        {/* {isSignup && (
                             <div className='auth__form-container_fields-content_input'>
                                 <label htmlFor="avatarURL">Rohy ahitana ny sarinao</label>
                                 <input
@@ -108,7 +108,7 @@ const Auth = () => {
                                     required
                                 />
                             </div>
-                        )}
+                        )} */}
                         <div className='auth__form-container_fields-content_input'>
                             <label htmlFor="password">Teny fanalahidy</label>
                             <input
