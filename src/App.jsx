@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StreamChat } from 'stream-chat';
-import { Chat, chat } from 'stream-chat-react';
+import { Chat } from 'stream-chat-react';
 import Cookies from 'universal-cookie';
 
 import { ChannelListContainer, ChannelContainer, Auth } from './components';
