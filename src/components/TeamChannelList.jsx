@@ -7,7 +7,7 @@ const TeamChannelList = ({ setToggleContainer, children, error = false, loading,
         return type === 'team' ? (
             <div className="team-channel-list">
                 <p className="team-channel-list__message">
-                Misy tsy fahatomombanana ny tambazotra, miandrasa kely azavady na miverena afaka kelikely eo.
+                Misy tsy fahatomombanana ny tambazotra, miandrasa kely azafady na miverena afaka kelikely eo.
                 </p>
             </div>
         ) : null
