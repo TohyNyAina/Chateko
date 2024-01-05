@@ -18,7 +18,7 @@ const initialState = {
 
 const Auth = () => {
   const [form, setForm] = useState(initialState);
-  const [isSignup, setIsSignup] = useState(true);
+  const [isSignup, setIsSignup] = useState(false);
   const [isLoading, setIsLoading] = useState(false); // Nouvel état
 
   const handleChange = (e) => {
