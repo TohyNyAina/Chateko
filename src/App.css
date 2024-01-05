@@ -941,7 +941,7 @@ body {
 }
 
 .team-channel-list__message {
-  color: #ffffff;
+  color: #1c45c9;
   padding: 0 16px;
 }
 
@@ -965,7 +965,7 @@ body {
   font-size: 13px;
   line-height: 16px;
   height: 16px;
-  color: rgba(255, 255, 255, 0.66);
+  color: #1c45c9;
   margin-bottom: 10px;
 }
 
@@ -1002,7 +1002,7 @@ body {
   align-items: center;
   font-family: Helvetica Neue, sans-serif;
   font-size: 14px;
-  color: #ffffff;
+  color: #1c45c9;
   padding: 0px 20px;
   height: 100%;
   width: 100%;
