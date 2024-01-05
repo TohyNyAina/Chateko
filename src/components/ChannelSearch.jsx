@@ -60,7 +60,7 @@ const ChannelSearch = ({ setToggleContainer }) => {
                 </div>
                 <input 
                     className="channel-search__input__text" 
-                    placeholder="Search" 
+                    placeholder="Hitady" 
                     type="text" 
                     value={query}  
                     onChange={onSearch}
